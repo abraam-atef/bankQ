@@ -8,20 +8,11 @@ import Fundamentals from "./component/QBank/fundamentals"
 import Termo from "./component/QBank/termo"
 import Phisiology from "./component/QBank/phesiology"
 import Add from "./component/add"
-import { useState,useEffect } from "react"
 import "./app.css"
 import Exam from "./component/Exam"
 import Micro from "./component/QBank/micro"
 import Anatomy from "./component/QBank/anatomy"
 function App() {
-  const [load, setLoad] = useState(true)
-  useEffect(() => {
-    const handel = () => {
-      setLoad(false)
-    }
-    window.addEventListener("load", handel)
-    return () => window.removeEventListener("load", handel)
-  }, [])
 
   return (
     <>
@@ -41,7 +32,6 @@ function App() {
           <Route path="/:subject/exam/:num" element={<Exam />} />
         </Routes>
       </div>
-    {load && (<div id="preloader"></div>)}
     </>
   )
 }
