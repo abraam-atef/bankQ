@@ -24,7 +24,7 @@ function App() {
 
           <Route path="/fundamentals" element={<Fundamentals />} />
           <Route path="/termo" element={<Termo />} />
-          <Route path="/phisiology" element={<Phisiology />} />
+          <Route path="/physiology" element={<Phisiology />} />
           <Route path="/micro" element={<Micro />} />
           <Route path="/anatomy" element={<Anatomy />} />
 

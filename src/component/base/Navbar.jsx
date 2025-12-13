@@ -16,8 +16,8 @@ export default function Navbar() {
             route:"/termo"
         },
         {
-            name:"Phisiology",
-            route:"/phisiology"
+            name:"Physiology",
+            route:"/physiology"
         },
         {
             name:"Micro",
