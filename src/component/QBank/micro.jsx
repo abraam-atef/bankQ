@@ -6,7 +6,7 @@ export default function Micro() {
     const [num, setNum] = useState(0)
     const env = "micro"
     useEffect(() => {
-        api(`/${env}`).then(r => setData(r.data))
+        api.get(`/${env}`).then(r => setData(r.data))
     }, [])
     return <div>
         <h1 className="p-4 text-center">{env}</h1>

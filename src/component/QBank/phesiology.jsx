@@ -6,7 +6,7 @@ export default function Phisiology() {
     const [num, setNum] = useState(0)
     const env = "physiology"
     useEffect(() => {
-        api("/physiology").then(r => setData(r.data))
+        api.get("/physiology").then(r => setData(r.data))
     }, [])
     return <div>
         <h1 className="p-4 text-center">physiology</h1>

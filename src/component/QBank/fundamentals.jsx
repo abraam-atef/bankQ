@@ -6,7 +6,7 @@ export default function Fundamentals() {
     const [num, setNum] = useState(0)
     const env = "fundamentals"
     useEffect(() => {
-        api(`/${env}`).then(r => setData(r.data))
+        api.get(`/${env}`).then(r => setData(r.data))
     }, [])
     return <div>
         <h1 className="p-4 text-center">Fundamentals</h1>

@@ -5,7 +5,7 @@ export default function Termo() {
     const [data, setData] = useState([])
     const [num, setNum] = useState(0)
     useEffect(() => {
-        api("/termo").then(r => setData(r.data))
+        api.get("/termo").then(r => setData(r.data))
     }, [])
     const env = "termo"
     return <div>
