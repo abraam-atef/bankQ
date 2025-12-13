@@ -8,7 +8,7 @@ export default function Termo() {
         api.get("/termo").then(r => setData(r.data))
     }, [])
     const env = "termo"
-    return <div>
+    return <div> style={{marginBottom:"75px"}}
         <h1 className="p-4 text-center">Termo</h1>
         {data.map((data, i) => { return <p key={i}>{i + 1}. {data.text}</p> })}
         <div className="collapse" id="answers">

@@ -8,7 +8,7 @@ export default function Fundamentals() {
     useEffect(() => {
         api.get(`/${env}`).then(r => setData(r.data))
     }, [])
-    return <div>
+    return <div style={{marginBottom:"75px"}}>
         <h1 className="p-4 text-center">Fundamentals</h1>
         {data.map((data, i) => { return <p key={i}>{i + 1}. {data.text}</p> })}
         <div className="collapse" id="answers">
