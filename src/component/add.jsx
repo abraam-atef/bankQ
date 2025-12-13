@@ -20,7 +20,7 @@ export default function Add() {
             <label htmlFor="text">Text</label>
         </div>
         <div className="form-floating my-4">
-            <input type="answer" className="form-control" onChange={e => setAnswer(e.target.value)} id="answer" placeholder="name@example.com" required />
+            <textarea type="answer" className="form-control" onChange={e => setAnswer(e.target.value)} id="answer" placeholder="name@example.com" required />
             <label htmlFor="answer">Answer</label>
         </div>
         <div className="d-grid gap-2 my-2">
